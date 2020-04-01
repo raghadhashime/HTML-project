@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <meta charset="utf-8">
+    <title>
+        C++ Tutorial
+        </title>
+        <link rel="stylesheet" href="projectFile.css">
+
+    </head>
+    <body >
+
+<div class="header" >
+  <h1 font-size="20px">Programming languages..</h1>
+    <button id="button" onclick="myFunction()">night mood</button>
+</div>
+
+<div class="topnav">
+  <a href="#">Home</a>
+    <a href="#" >C++</a>
+      <a href="#" >java</a>
+        <a href="#" >HTML</a>
+
+        </div>
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+     
+    <h1 class="mainHeading" >c++ Introduction</h1>
+<h2>What is C++?</h2>
+
+<video controls height ="50%" width="50%" src="video/video8.mov"></video>
+If you want watch it <a href="https://www.youtube.com/watch?v=OTroAxvRNbw" target="_blank">click here</a> 
+    <p>
+C++ is a cross-platform language that can be used to create high-performance applications.<br/>
+C++ was developed by Bjarne Stroustrup, as an extension to the C language.<br/>
+C++ gives programmers a high level of control over system resources and memory.<br/>
+The language was updated 3 major times in 2011, 2014, and 2017 to C++11, C++14, and C++17.<br/></p>
+<hr height="50px" />
+<h3 >Why Use C++</h3>
+<video controls height ="50%" width="50%" src="video/video9.mov"></video>
+If you want watch it <a href="https://www.youtube.com/watch?v=66bmP8l3kqI" target="_blank">click here</a> 
+<p>
+C++ is one of the world's most popular programming languages.<br/>
+C++ can be found in today's operating systems, Graphical User Interfaces, and embedded systems.<br/>
+C++ is an object-oriented programming language which gives a clear structure to programs and allows code to be reused, lowering development costs.<br/>
+C++ is portable and can be used to develop applications that can be adapted to multiple platforms.<br/>
+C++ is fun and easy to learn!<br/>
+As C++ is close to C# and Java, it makes it easy for programmers to switch to C++ or vice versa.<br/></p> 
+<p><b>you need two things:</b></p>
+<ul >
+    <li  >A text editor, like Notepad, to write C++ code</li>
+    <li>A compiler, like GCC, to translate the C++ code into a language that the computer will understand</li>
+        </ul>        
+    <p>
+There are many text editors and compilers to choose from. In this tutorial,<br/>
+we will use an IDE (see below).</p> 
+<hr stylr="border-top: dotted 10px;"/>
+ <h1 class="mainHeading">C++ Install IDE</h1>
+<p>   
+An IDE (Integrated Development Environment) is used to edit AND compile the code.<br/>
+Popular IDE's include Code::Blocks, Eclipse, and Visual Studio. These are all <br/>free, and they can be used to both edit and debug C++ code.<br/>
+</p><p class="note"><b >Note:</b>Web-based IDE's can work as well, but functionality is limited.<p>
+We will use Code::Blocks in our tutorial, which we believe is a good place to start.<br/>
+        You can find the latest version of Codeblocks at http:<ins>//www.codeblocks.org/downloads/26 </ins>. <br/>Download the <span class="note"> mingw-setup.exe </span> file, which will install the text editor with a compiler<br/></p>
+<p>Let's create our first C++ file.
+
+Open Codeblocks and go to File > New > Empty File.<br/>
+
+    Write the following C++ code and save the file as <span class="note">myfirstprogram.cpp </span>(File > Save File as):</p>
+<p><b>myfirstprogram.cpp</b></p>
+<p class="example" >
+#include &lt;iostream> <br>
+using namespace std;<br><br>
+
+int main() {  <br>
+  cout &lt;&lt; "Hello World!";<br>
+  return 0;<br>
+    } <br>
+    </p>
+
+<p>Then, go to Build > Build and Run to run (execute) the program. The result<br/> will look something to this:</p>
+<p>Hello World!<br/>
+Process returned 0 (0x0) execution time : 0.011 s <br/>
+Press any key to continue.</p>
+<p><b>Congratulations!</b> You have now written and executed your first C++ program.
+</p>
+<h2 class="mainHeading">Learning C++ </h2>
+
+    <p>When learning C++ at W3Schools.com, you can use our "Run Example" tool, <br/> which shows both the code and the result. This will make it easier for you<br/> to understand every part as we move forward:
+
+        <p><b>myfirstprogram.cpp</b><br/></p>
+<p class="example">Code:<br/><br>
+
+#include &lt; iostream><br/>
+using namespace std;<br/><br>
+
+int main() {<br/>
+  cout &lt; &lt;  "Hello World!";<br/>
+  return 0;<br/>
+    }<br/></p>
+
+Result:<br/>
+<p >Hello World!</p><br/>
+<hr style="border-top: dotted 10px;"/>
+ <h1 class="mainHeading">C++ Syntax</h1> 
+    
+<video controls height ="50%" width="50%" src="video/video10.mov"></video>
+If you want watch it <a href="https://www.youtube.com/watch?v=gscX6RGYd2k" target="_blank">click here</a> 
+<p>Let's break up the following code to understand it better:</p>
+<p class="example"><b>Example</b><br>
+
+#include &lt;iostream><br/>
+using namespace std;<br/>
+
+int main() {<br/>
+  cout &lt;&lt; "Hello World!";<br/>
+  return 0;<br/>
+}<br/>
+
+</p>
+<p><b>Example explained</b>
+    <p><b>Line 1:</b>  &lt; style ="background-color: aliceblue"> #include &lt;iostream> is a header file library that lets us work with input and output objects, such as cout (used in line 5). Header files add functionality to C++ programs.</p>
+<p><b>Line 2:</b>  using namespace std means that we can use names for objects and variables from the standard library.</p>
+    <p class="note"> Don't worry if you don't understand how #include &lt;iostream> and using namespace std works. Just think of it <br/>
+    as something that (almost) always appears in your program.></p>
+<hr/>    
+<p><b>Line 3:</b> A blank line. C++ ignores white space.</p>
+
+    <p><b>Line 4:</b>  Another thing that always appear in a C++ program, is int main(). This is called a function.<br/> Any code inside its curly brackets {} will <br/>be executed.</p>
+
+<p><b>Line 5:</b>  cout (pronounced "see-out") is an object used together with the insertion operator (&lt;&lt;)<br/> to output/print text. In our example it will output "Hello World".</p>
+
+    <p><b>Note:</b> Every C++ statement ends with a semicolon ;.</p>
+
+<p><b>Line 6:</b>  The body of int main() could also been written as:<br/>
+    int main () { cout &lt;&lt; "Hello World! "; return 0; }</p>
+
+    <p><b>Remember:</b> The compiler ignores white spaces. However, multiple lines makes the code more readable.</p>
+
+    <p><b>Line 6:</b> return 0 ends the main function.</p>
+
+<p><b>Line 7:</b> Do not forget to add the closing curly bracket } to actually end the main function.</p>
+<b>Omitting Namespace</b>
+<p>You might see some C++ programs that runs without the standard namespace library.<br/> The using namespace std line can be omitted and replaced with the std keyword, followed by the :: operator for some objects:</p>
+
+<p class="example"><b>Example</b>
+
+#include &lt;iostream><br/><br/>
+
+int main() {<br/>
+  std::cout &lt;&lt; "Hello World!";<br/>
+  return 0;<br/>
+    }</p>
+
+
+<hr style="border-top: dotted 10px;"/>
+<h1 class="mainHeading">C++ Output (Print Text)</h1>
+<video controls height ="50%" width="50%" src="video/vedio1.mov"></video>
+If you want watch it <a href="https://www.youtube.com/watch?v=Ob4JStv5aJI" target="_blank">click here</a>
+<p>The cout object, together with the &lt;&lt; operator, is used to output values/print text:<br/>
+<p class="example"><b>Example:</b>
+#include &lt;iostream><br/>
+    using namespace std;<br/><br>
+
+int main() {<br/>
+  cout &lt;&lt; "Hello World!";<br/>
+  return 0;<br/>
+    }</p>
+
+        <p>You can add as many cout objects as you want. However, note that it does not insert a new line at the end of the output:<br/></p>
+<p class="example"><b>Example:</b><br>
+#include &lt;iostream><br/>
+    using namespace std;<br><br>
+
+int main() {<br/>
+  cout &lt;&lt; "Hello World!";<br/>
+  cout &lt;&lt; "I am learning C++";<br/>
+  return 0;<br/>
+}
+</p>
+<hr style="border-top: dotted 10px;"/>
+ <h1 class="mainHeading">C++ New Lines</h1>
+<video controls height ="50%" width="50%" src="video/video2.mov"></video>
+If you want watch it <a href="https://www.youtube.com/watch?v=2EZ5iP6F7sM" target="_blank">click here</a>
+<p>
+To insert a new line, you can use the \n character:<br/>
+<p class="example"><b>Example:</b>
+#include &lt;iostream><br/>
+    using namespace std;<br><br>
+
+int main() {<br/>
+  cout &lt;&lt; "Hello World! \n";<br/>
+  cout &lt;&lt;"I am learning C++";<br/>
+  return 0;<br/>
+    }</p>
+
+<p>Tip: Two \n characters after each other will create a blank line:<br/>
+<p class="example"><b>Example:</b><br>
+#include &lt;iostream><br/>
+    using namespace std;<br><br>
+
+int main() {<br/>
+  cout &lt;&lt; "Hello World! \n\n";<br/>
+  cout &lt;&lt; "I am learning C++";<br/>
+  return 0;<br/>
+    }</p>
+
+<p>Another way to insert a new line, is with the endl manipulator:<br/>
+<p class="example"><b>Example:</b>
+#include &lt;iostream><br/>
+    using namespace std;<br><br>
+
+int main() {<br/>
+  cout &lt;&lt; "Hello World!" &lt;&lt;endl;<br/>
+  cout &lt;&lt; "I am learning C++";<br/>
+  return 0;<br/>
+    }</p>
+
+<p>Both \n and endl are used to break lines. However, \n is used more often and is the preferred way.</p>
+
+<hr style="border-top: dotted 10px;"/>
+  <h1 class="mainHeading">C++ Comments</h1>
+<video controls height ="50%" width="50%" src="video/video3.mov"></video>
+If you want watch it <a href="https://www.youtube.com/watch?v=uT0c5X1kvq4" target="_blank">click here</a>
+<p>Comments can be used to explain C++ code, and to make it more readable. It can also be used to prevent execution when testing alternative code.<br/> Comments can be singled-lined or multi-lined.<br/>
+
+Single-line comments start with two forward slashes (//).<br/>
+
+Any text between // and the end of the line is ignored by the compiler (will not be executed).</p>
+
+<p>This example uses a single-line comment before a line of code:<br/>
+    <b>Example:</b><br/><br/>
+
+// This is a comment<br/>
+    cout &lt;&lt; "Hello World!";<br/></p>
+
+<p>This example uses a single-line comment at the end of a line of code:<br/>
+    <b>Example:</b><br/><br/>
+
+cout &lt;&lt; "Hello World!";     // This is a comment<br>
+    </p>
+    <h2 class="mainHeading">C++ Multi-line Comments</h2>
+<video controls height ="50%" width="50%" src="video/video4.mov"></video>
+If you want watch it <a href="https://www.youtube.com/watch?v=G1hdIPHDohk" target="_blank">click here</a>
+<p>
+Multi-line comments start with /* and ends with */ .<br/></p>
+
+<p>Any text between /* and */ will be ignored by<br/> the compiler:</p>
+
+<p><b>Example:<br/><br/>
+
+/* The code below will print the words Hello World!<br/>
+to the screen, and it is amazing */<br/>
+    cout &lt;&lt; "Hello World!";<br/><br/></b>
+
+<p><b>Single or multi-line comments?</b><br/>
+
+It is up to you which you want to use. Normally, we use // for short comments, and <br/>/* */for longer</p>
+
+<hr style="border-top: dotted 10px;"/>
+  <h1 class="mainHeading">C++ Variables</h1>
+<video controls height ="50%" width="50%" src="video/video5.mov"></video>
+If you want watch it <a href="https://www.youtube.com/watch?v=zB9RI8_wExo" target="_blank">click here</a>
+<p>
+Variables are containers for storing data values.<br/><br/>
+
+In C++, there are different <b>types</b> of variables (defined with different keywords), for example:</p>
+<ul>
+<li><span style="background-color:azure;color: red;">int</span> - stores integers (whole numbers), without decimals, such as 123 or -123</li>
+<li><span style="background-color:azure;color: red;">double</span> - stores floating point numbers, with decimals, such as 19.99 or -19.99</li>
+<li><span style="background-color:azure;color: red;">char</span> - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes</li>
+<li><span style="background-color:azure;color: red;">string</span> - stores text, such as "Hello World". String values are surrounded by double quotes</li>
+<li><span style="background-color:azure;color: red;">bool</span> - stores values with two states: true or false</li>
+</ul>
+  <h1 class="mainHeading">Declaring (Creating) Variables</h1>
+<video controls height ="50%" width="50%" src="video/video6.mov"></video>
+If you want watch it <a href="https://www.youtube.com/watch?v=vSTesJdgRCU" target="_blank">click here</a>
+<p>
+To create a variable, you must specify the type and assign it a value:<br/>
+<b>Syntax</b><br/>
+    type variable = value;</p>
+
+<p>Where type is one of C++ types (such as int , and variable is the<br/> name of the variable (such as<b> x</b> or <b>myName</b>). The <b>equal sign</b> is used to assign values to the variable.</p>
+
+    <p>To create a variable that should store a number, look at the following example:</p>
+        <p><b>Example:</b><br/><br/>
+
+Create a variable called myNum of type int and assign it the value 15:<br/>
+int myNum = 15;<br/>
+cout &lt;&lt; myNum;</p> 
+
+<p>You can also declare a variable without assigning the value, and assign the value later:<br/>
+        <p class="example"><b>Example:</b><br/><br/>
+
+int myNum;<br/>
+myNum = 15;<br/>
+    cout &lt;&lt; myNum;</p>
+   
+
+<p>Note that if you assign a new value to an existing variable, it will overwrite the previous value:<br/>
+ <p class="example"><b>Example:</b><br/>
+int myNum = 15;  // myNum is 15<br/>
+myNum = 10;  // Now myNum is 10<br/>
+cout &lt;&lt; myNum;  // Outputs 10
+</p> 
+  
+<hr style="border-top: dotted 10px;"/>
+<h1 class="mainHeading">Other Types</h1>
+    <p>A demonstration of other data types:</p>
+
+<p class="example" ><b>Example:</b><br/>
+int myNum = 5;               // Integer (whole number without decimals)<br/>
+double myFloatNum = 5.99;    // Floating point number (with decimals)<br/>
+char myLetter = 'D';         // Character<br/>
+string myText = "Hello";     // String (text)<br/>
+bool myBoolean = true;       // Boolean (true or false)<br/>
+</p> 
+<p>You will learn more about the individual types in the <ins>Data Types</ins> chapter.</p>
+
+<h2 class="mainHeading">Display Variables</h2>
+<video controls height ="50%" width="50%" src="video/video7.mov"></video>
+If you want watch it <a href="https://www.youtube.com/watch?v=CrmmJHGFW6Q" target="_blank">click here</a>
+<p>
+The cout object is used together with<br/> the &lt;&lt; operator to display variables.<br/><br/>
+
+To combine both text and a variable, separate them with the<span style="background-color:azure;color: red;"> &lt;&lt; </span> operator:<br/><br/>
+
+<span class="example"><b>Example:</b><br/>
+int myAge = 35;<br/>
+cout &lt;&lt; "I am " &lt;&lt; myAge &lt;&lt; " years old.";</span><br/>
+</p>
+<h3 class="mainHeading">Add Variables Together</h3>
+    <p>To add a variable to another variable, you can use the <span style="background-color:azure;color: red;">+ </span>operator:</p>
+<p class="example"><b>Example:</b><br>
+int x = 5;
+int y = 6;
+int sum = x + y;
+    cout &lt;&lt; sum;</p>
+<hr style="border-top: dotted 10px;"/>
+<h1 class="mainHeading">C++ User Input</h1>
+<video controls height ="50%" width="50%" src="video/video11.mov"></video>
+If you want watch it <a href="https://www.youtube.com/watch?v=7JqoqI23w2U" target="_blank">click here</a>
+    <p>You have already learned that cout is used to output (print) values. Now we will use cin to get user input.</p>
+
+    <p class="note">cin is a predefined variable that reads data from the keyboard with the extraction operator (>>).</p>
+
+    <p>In the following example, the user can input a number, which is stored in the variable x. Then we print the value of x:</p>
+<p class="example"><b>Example</b><br>
+int x; <br/>
+cout &lt;&lt; "Type a number: "; // Type a number and press enter<br/>
+cin >> x; // Get user input from the keyboard<br/>
+    cout &lt;&lt; "Your number is: " &lt;&lt; x; // Display the input value<br/><br/></p>
+
+<b>Good To Know</b>
+
+    <p>cout is pronounced "see-out". Used for output, and uses the insertion operator (&lt;&lt;)</p>
+
+<p>cin is pronounced "see-in". Used for input, and uses the extraction operator (>>)
+</p> 
+    
+<h2>Creating a Simple Calculator</h2>
+    <p>In this example, the user must input two numbers. Then we print the sum by calculating (adding) the two numbers:</p>
+<p class="example"><b>Example</b><br>
+int x, y;<br/>
+int sum;<br/>
+cout &lt;&lt; "Type a number: ";<br/>
+cin >> x;<br/>
+cout &lt;&lt; "Type another number: ";<br/>
+cin >> y;<br/>
+sum = x + y;<br/>
+    cout &lt;&lt;"Sum is: " &lt;&lt;sum;<br/><br/>
+
+There you go! You just built a basic calculator!<br/>
+</p>
+    <hr style="border-top: dotted 10px;"/>
+<h1 class="mainHeading">C++ Data Types</h1>
+<video controls height ="50%" width="50%" src="video/video12.mov"></video>
+If you want watch it <a href="https://www.youtube.com/watch?v=8GJqjFoY7UQ" target="_blank">click here</a>
+    <p>As explained in the Variables chapter, a variable in C++ must be a specified data type:</p>
+    
+<p class="example"><b>Example</b><br>
+int myNum = 5;               // Integer (whole number) <br/>
+float myFloatNum = 5.99;     // Floating point number<br/>
+double myDoubleNum = 9.98;   // Floating point number<br/>
+char myLetter = 'D';         // Character<br/>
+bool myBoolean = true;       // Boolean<br/>
+    string myText = "Hello";     // String<br/></p>
+    
+<h2>Basic Data Types</h2>
+    <p>The data type specifies the size and type of information the variable will store:</p>
+
+<table border="1px">
+<tr>
+<th>Data Type</th>
+<th>Size</th>
+<th>Description</th>
+
+</tr>
+<tr>
+<td>int</td>
+<td>4 bytes</td>
+<td>Stores whole numbers, without decimals</td>
+</tr>
+<tr>
+<td>float</td>
+<td>4 bytes</td>
+<td>Stores fractional numbers, containing one or more decimals. Sufficient for storing 7 decimal digits</td>
+</tr>
+<tr>
+<td>double</td>
+<td>8 bytes</td>
+<td>Stores fractional numbers, containing one or more decimals. Sufficient for storing 15 decimal digits</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td>1 byte</td>
+<td>Stores true or false values</td>
+</tr>
+<tr>
+<td>char</td>
+<td>1 byte</td>
+<td>Stores a single character/letter/number, or ASCII values</td>
+</tr>
+</table>
+
+<p class="note">You will learn more about the individual data types in the next chapters.<br/></p>
+           <a href="file:///Users/raghad/Desktop/html/project2.html" class="padding" style="margin-left:1360px;">NEXT</a>
+         
+        
+    </body>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </html>
